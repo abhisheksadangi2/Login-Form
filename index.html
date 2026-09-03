@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <div class="start">
+        <form action="">
+            <div class="heading">
+                <h1>Login</h1>
+            </div>
+            
+            <div class="input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="box1" placeholder="your username" required>
+            </div>
+            
+            <div class="input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="box2" placeholder="your password" required>
+            </div>
+            
+            <div class="remember-me">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            
+            <div class="login">
+                <button type="button" id="loginButton">Login</button>
+            </div>
+            
+            <div class="create-one">
+                <p>Don't have an account? <a href="#">Create account</a></p>
+            </div>
+            
+            <div class="another">
+                <p>or</p>
+            </div>
+            
+            <div class="social-login">
+                <button type="button" class="btn-facebook">
+                   <i class="fab fa-facebook"></i> Login with Facebook
+                </button>
+                <button type="button" class="btn-google">
+                     <i class="fab fa-google"></i> Login with Google
+                </button>
+                <button type="button" class="btn-twitter">
+                    <i class="fab fa-twitter"></i> Login with Twitter
+                </button>
+            </div>
+        </form>
+     </div>
+
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function () {
+            const username = document.getElementById("box1").value;
+            const password = document.getElementById("box2").value;
+
+            if (username === "" || password === "") {
+                alert("Please enter username and password.");
+            } else {
+                alert("Login successful!");
+            }
+        });
+    </script>
+</body>
+</html>

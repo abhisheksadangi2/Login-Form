@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("308434.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.start {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 25px;
+    border-radius: 20px;
+    
+    /* Matches the deep purple tone of your mountain landscape */
+    background: rgba(45, 16, 75, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    /* Soft glowing purple-pink border and shadow */
+    border: 1px solid rgba(216, 180, 254, 0.3);
+    box-shadow: 0 20px 40px rgba(23, 8, 38, 0.6);
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff; /* Bright white title */
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.input i {
+    color: #f472b6; /* Warm Pink Icon */
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.input input {
+    border: 1px solid rgba(216, 180, 254, 0.3);
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff; /* White typing text */
+    border-radius: 10px;
+    padding: 10px 14px;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input input:focus {
+    border-color: #e879f9;
+    box-shadow: 0 0 10px rgba(232, 121, 249, 0.3);
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+#box1::placeholder,  
+#box2::placeholder {
+    color: #e9d5ff; /* Light Lavender Placeholder */
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #f3e8ff;
+}
+
+.remember-me input[type="checkbox"] {
+    accent-color: #c084fc;
+    cursor: pointer;
+}
+
+.remember-me a {
+    color: #e879f9; /* Bright Orchid Pink */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.login button {
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%); /* Purple Gradient */
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    transition: all 0.2s ease;
+}
+
+.login button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+.create-one {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.create-one p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e9d5ff;
+}
+
+.create-one a {
+    color: #e879f9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-one a:hover {
+    text-decoration: underline;
+}
+
+.another {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #d8b4fe;
+    margin-bottom: 15px;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-login button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-login button:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+.btn-facebook {
+    background-color: #1877f2;
+}
+
+.btn-google {
+    background-color: #ea4335;
+}
+
+.btn-twitter {
+    background-color: #1da1f2;
+}
+
+/* Mobile Screen Breakpoint */
+@media (max-width: 480px) {
+    .start {
+        padding: 20px 15px;
+    }
+
+    .remember-me,
+    .create-one p {
+        font-size: 12px;
+    }
+}
