@@ -1,38 +1,32 @@
-# Login Form Website
+# Login Form
 
-A simple and responsive Login Form created using HTML and CSS.
+A simple and modern Login Form built using HTML and CSS.
 
-## 🚀 Live Demo
+## 🚀 Features
 
-
+- Clean and modern user interface
+- Responsive design
+- Username/Email input field
+- Password input field
+- Remember me option
+- Forgot password link
+- Sign-up link
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript
-- Font Awesome
-- Boxicons
 
-## ✨ Features
+## 🌐 Visit Demo
 
-- Username input
-- Password input
-- Remember Me option
-- Forgot Password link
-- Create Account link
-- Login button
-- Login with Facebook
-- Login with Google
-- Login with Twitter
-- Responsive design
-- Custom background image
+👉 [Visit Live Demo](https://login-form-gej6.vercel.app/)
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Login-Form/
+│
 ├── index.html
-├── login.css
-├── 308434.jpg
-└── README.md
+├── style.css
+├── README.md
+└── 308434.jpg
